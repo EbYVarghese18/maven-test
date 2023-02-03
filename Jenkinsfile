@@ -30,7 +30,6 @@ pipeline {
             steps {
                 echo 'Build Dockerimage starts'
                 script{
-		    cd my-app
                     sh 'docker build -t ebinvarghese/myappsnapshot:1.0 .'
                 }
                 echo 'Build Dockerimage ends'
