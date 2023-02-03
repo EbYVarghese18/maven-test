@@ -15,7 +15,7 @@ pipeline {
         stage('SCM checkout') {
             steps {
                 echo 'checkout starts'
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/EbYVarghese18/maven-test.git']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/EbYVarghese18/maven-test.git']])
                 echo 'checkout ends'
             }
         }
