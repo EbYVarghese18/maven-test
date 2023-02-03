@@ -20,7 +20,6 @@ pipeline {
             }
         }
         stage('Build Maven') {
-	    def pomfilepath= /my-app/pom.xml
             steps {
                 echo 'Build Maven starts'
                 sh 'mvn clean install -f my-app/pom.xml'
