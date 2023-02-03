@@ -22,7 +22,7 @@ pipeline {
         stage('Build Maven') {
             steps {
                 echo 'Build Maven starts'
-                mvn -f my-app/pom.xml clean install
+                sh "mvn clean install"
                 echo 'Build Maven Ends'
             }
         }
