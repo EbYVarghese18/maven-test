@@ -41,7 +41,7 @@ pipeline {
                     withCredentials([string(credentialsId: 'dockerpwd', variable: 'dockerpwd')]) {
                     sh 'docker login -u ebinvarghese -p ${dockerpwd}'
                     }
-                    sh 'docker push ebinvarghese/myappsnapshot:2.0'
+                    sh 'docker push ebinvarghese/myappsnapshot:1.0'
                     sh 'docker logout'
                 }
             }
