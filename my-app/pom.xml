@@ -73,5 +73,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <finalName>myapp-maven</finalName>
   </build>
 </project>
