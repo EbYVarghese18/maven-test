@@ -38,7 +38,7 @@ pipeline {
         stage('Push Docker image to Dockerhub') {
             steps {
                 script{
-                    withCredentials([string(credentialsId: 'dockerhubpwdnew', variable: 'dockerhubpwd')]) {
+                    withCredentials([string(credentialsId: 'dockerpwd', variable: 'dockerhubpwd')]) {
                     sh 'docker login -u ebinvarghese -p ${dockerhubpwd}'
                     }
                     sh 'docker push ebinvarghese/myappsnapshot:1.0'
